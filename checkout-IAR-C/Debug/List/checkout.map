@@ -1,0 +1,398 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.3.10732/W32 for ARM                22/Apr/2016  17:56:43
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Exe\checkout.out
+#    Map file     =  
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\List\checkout.map
+#    Command line =  
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj\assocArray.o
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj\checkout.o
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj\item.o
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj\main.o
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj\promo.o
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj\slist.o
+#        -o
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Exe\checkout.out
+#        --map
+#        C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\List\checkout.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0007ffff] { ro };
+"P3":  place in [from 0x00000000 to 0x00000000] |
+                [from 0x20000000 to 0x2000ffff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0x40
+  .intvec            ro code  0x00000000    0x40  vector_table_M.o [5]
+                            - 0x00000040    0x40
+
+"P1":                                     0x3990
+  .text              ro code  0x00000040  0x14f0  dlmalloc.o [3]
+  .text              ro code  0x00001530     0x6  abort.o [3]
+  .text              ro code  0x00001536     0x2  vector_table_M.o [5]
+  .text              ro code  0x00001538    0x2c  xgetmemchunk.o [3]
+  .text              ro code  0x00001564    0x14  exit.o [6]
+  .text              ro code  0x00001578    0x6c  iarttio.o [6]
+  .text              ro code  0x000015e4     0x8  XShttio.o [3]
+  .text              ro code  0x000015ec   0xbfa  xprintflarge_nomb.o [3]
+  .text              ro code  0x000021e8    0x16  strchr.o [5]
+  .text              ro code  0x00002200    0x36  strlen.o [5]
+  .text              ro code  0x00002238    0x58  memchr.o [5]
+  .text              ro code  0x00002290    0xee  I64DivMod.o [5]
+  .text              ro code  0x00002380    0x76  ABImemcpy_unaligned.o [5]
+  .text              ro code  0x000023f6    0x42  xdnorm.o [4]
+  .text              ro code  0x00002438    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x00002468   0x1a2  DblMul.o [4]
+  .text              ro code  0x0000260c   0x256  DblDiv.o [4]
+  .text              ro code  0x00002864    0x2c  DblToI32.o [4]
+  .text              ro code  0x00002890    0x1c  I32ToDbl.o [4]
+  .text              ro code  0x000028ac   0x180  DblSub.o [4]
+  .text              ro code  0x00002a2c     0xe  div.o [3]
+  .text              ro code  0x00002a3c     0x2  I64DivZer.o [5]
+  .text              ro code  0x00002a40    0xd4  DblAdd.o [4]
+  .text              ro code  0x00002b14   0x516  qsort.o [3]
+  .text              ro code  0x0000302c    0x78  ABImemmove_unaligned.o [5]
+  .text              ro code  0x000030a4   0x11c  slist.o [1]
+  .text              ro code  0x000031c0    0x24  printf.o [3]
+  .text              ro code  0x000031e4    0xd6  FltSub.o [4]
+  .text              ro code  0x000032bc    0xd4  promo.o [1]
+  .text              ro code  0x00003390    0x42  strcmp_unaligned.o [5]
+  .text              ro code  0x000033d4    0x84  FltAdd.o [4]
+  .text              ro code  0x00003458    0x24  FltCmpLe.o [4]
+  .text              ro code  0x0000347c    0x4e  FltToDbl.o [4]
+  .text              ro code  0x000034cc    0x90  DblToFlt.o [4]
+  .text              ro code  0x0000355c    0xc8  checkout.o [1]
+  .text              ro code  0x00003624    0x14  item.o [1]
+  .text              ro code  0x00003638    0x6c  assocArray.o [1]
+  .text              ro code  0x000036a4    0x3c  bsearch.o [3]
+  .text              ro code  0x000036e0    0xa4  main.o [1]
+  .text              ro code  0x00003784    0x40  zero_init3.o [5]
+  .text              ro code  0x000037c4    0x2c  copy_init3.o [5]
+  .text              ro code  0x000037f0    0x28  putchar.o [3]
+  .text              ro code  0x00003818    0x10  write.o [6]
+  .text              ro code  0x00003828    0x1e  dwrite.o [6]
+  .text              ro code  0x00003846    0x20  iarwstd.o [6]
+  .text              ro code  0x00003866    0x22  iarwrite.o [6]
+  .text              ro code  0x00003888    0x28  data_init.o [5]
+  .iar.init_table    const    0x000038b0    0x24  - Linker created -
+  .text              ro code  0x000038d4    0x1a  cmain.o [5]
+  .text              ro code  0x000038ee     0x4  low_level_init.o [3]
+  .text              ro code  0x000038f2     0x4  exit.o [3]
+  .text              ro code  0x000038f8     0xa  cexit.o [5]
+  .text              ro code  0x00003902    0x16  xprout.o [3]
+  .rodata            const    0x00003918    0x10  item.o [1]
+  .rodata            const    0x00003928    0x10  promo.o [1]
+  .text              ro code  0x00003938     0xc  cstartup_M.o [5]
+  .rodata            const    0x00003944     0x8  item.o [1]
+  .rodata            const    0x0000394c     0x8  item.o [1]
+  .rodata            const    0x00003954     0x8  main.o [1]
+  .rodata            const    0x0000395c     0x4  item.o [1]
+  .rodata            const    0x00003960     0x4  item.o [1]
+  .rodata            const    0x00003964     0x4  item.o [1]
+  .rodata            const    0x00003968     0x4  main.o [1]
+  .rodata            const    0x0000396c     0x4  main.o [1]
+  .rodata            const    0x00003970     0x4  main.o [1]
+  .rodata            const    0x00003974     0x0  zero_init3.o [5]
+  .rodata            const    0x00003974     0x0  copy_init3.o [5]
+  Initializer bytes  const    0x00003974    0x5c  <for P3 s0>
+                            - 0x000039d0  0x3990
+
+"P3", part 1 of 3:                          0x5c
+  P3 s0                       0x20000000    0x5c  <Init block>
+    .data            inited   0x20000000    0x24  item.o [1]
+    .data            inited   0x20000024    0x10  main.o [1]
+    .data            inited   0x20000034     0xc  main.o [1]
+    .data            inited   0x20000040     0xc  main.o [1]
+    .data            inited   0x2000004c     0x8  promo.o [1]
+    .data            inited   0x20000054     0x8  XShttio.o [3]
+                            - 0x2000005c    0x5c
+
+"P3", part 2 of 3:                         0x1f4
+  .bss               zero     0x2000005c   0x1d8  dlmalloc.o [3]
+  .bss               zero     0x20000234    0x18  dlmalloc.o [3]
+  .bss               zero     0x2000024c     0x4  xgetmemchunk.o [3]
+                            - 0x20000250   0x1f4
+
+"P3", part 3 of 3:                         0xc00
+  CSTACK                      0x20000250   0x400  <Block>
+    CSTACK           uninit   0x20000250   0x400  <Block tail>
+  HEAP                        0x20000650   0x800  <Block>
+    HEAP             uninit   0x20000650   0x800  <Block tail>
+                            - 0x20000e50   0xc00
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1f4:
+          0x2000005c  0x1f4
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x5c:
+          0x00003974   0x5c
+    1 destination range, total size 0x5c:
+          0x20000000   0x5c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj: [1]
+    assocArray.o                108
+    checkout.o                  200
+    item.o                       20       80       36
+    main.o                      164       60       40
+    promo.o                     212       24        8
+    slist.o                     284
+    -------------------------------------------------
+    Total:                      988      164       84
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    XShttio.o                     8        8        8
+    abort.o                       6
+    bsearch.o                    60
+    div.o                        14
+    dlmalloc.o                5 360               496
+    exit.o                        4
+    low_level_init.o              4
+    printf.o                     36
+    putchar.o                    40
+    qsort.o                   1 302
+    xgetmemchunk.o               44                 4
+    xprintflarge_nomb.o       3 066
+    xprout.o                     22
+    -------------------------------------------------
+    Total:                    9 966        8      508
+
+m7M_tl.a: [4]
+    DblAdd.o                    212
+    DblCmpLe.o                   46
+    DblDiv.o                    598
+    DblMul.o                    418
+    DblSub.o                    384
+    DblToFlt.o                  144
+    DblToI32.o                   44
+    FltAdd.o                    132
+    FltCmpLe.o                   36
+    FltSub.o                    214
+    FltToDbl.o                   78
+    I32ToDbl.o                   28
+    xdnorm.o                     66
+    -------------------------------------------------
+    Total:                    2 400
+
+rt7M_tl.a: [5]
+    ABImemcpy_unaligned.o       118
+    ABImemmove_unaligned.o      120
+    I64DivMod.o                 238
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 44
+    cstartup_M.o                 12
+    data_init.o                  40
+    memchr.o                     88
+    strchr.o                     22
+    strcmp_unaligned.o           66
+    strlen.o                     54
+    vector_table_M.o             66
+    zero_init3.o                 64
+    -------------------------------------------------
+    Total:                      970
+
+shb_l.a: [6]
+    dwrite.o                     30
+    exit.o                       20
+    iarttio.o                   108
+    iarwrite.o                   34
+    iarwstd.o                    32
+    write.o                      16
+    -------------------------------------------------
+    Total:                      240
+
+    Gaps                         28
+    Linker created                        36    3 072
+-----------------------------------------------------
+    Grand Total:             14 592      208    3 664
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x000038b0          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000038d4          --   Gb  - Linker created -
+?main                   0x000038d5         Code  Gb  cmain.o [5]
+CSTACK$$Base            0x20000250          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000650          --   Gb  - Linker created -
+HEAP$$Base              0x20000650          --   Gb  - Linker created -
+HEAP$$Limit             0x20000e50          --   Gb  - Linker created -
+LoadInt                 0x00001b65   0x6e  Code  Lc  xprintflarge_nomb.o [3]
+Region$$Table$$Base     0x000038b0          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000038d4          --   Gb  - Linker created -
+_GenldLargeNoMb         0x00001f59  0x246  Code  Lc  xprintflarge_nomb.o [3]
+_LdtobLargeNoMb         0x00001cd9  0x27a  Code  Lc  xprintflarge_nomb.o [3]
+_LitobLargeNoMb         0x00001bd3  0x106  Code  Lc  xprintflarge_nomb.o [3]
+_PrintfLargeNoMb        0x000015ed  0x572  Code  Gb  xprintflarge_nomb.o [3]
+_Prout                  0x00003903   0x16  Code  Gb  xprout.o [3]
+_PutcharsLargeNoMb      0x0000219f   0x2e  Code  Lc  xprintflarge_nomb.o [3]
+__aeabi_cdcmple         0x00002439         Code  Gb  DblCmpLe.o [4]
+__aeabi_cfcmple         0x00003459         Code  Gb  FltCmpLe.o [4]
+__aeabi_d2f             0x000034cd         Code  Gb  DblToFlt.o [4]
+__aeabi_d2uiz           0x00002865         Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x0000260d         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x00002469         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x000028ad         Code  Gb  DblSub.o [4]
+__aeabi_f2d             0x0000347d         Code  Gb  FltToDbl.o [4]
+__aeabi_fadd            0x000033d5         Code  Gb  FltAdd.o [4]
+__aeabi_ldiv0           0x00002a3d         Code  Gb  I64DivZer.o [5]
+__aeabi_ui2d            0x00002891         Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x00002291         Code  Gb  I64DivMod.o [5]
+__cmain                 0x000038d5         Code  Gb  cmain.o [5]
+__data_GetMemChunk      0x00001539   0x2c  Code  Gb  xgetmemchunk.o [3]
+__dwrite                0x00003829   0x1e  Code  Gb  dwrite.o [6]
+__exit                  0x00001565   0x14  Code  Gb  exit.o [6]
+__iar_Dnorm             0x000023f7   0x42  Code  Gb  xdnorm.o [4]
+__iar_Memchr            0x00002239         Code  Gb  memchr.o [5]
+__iar_Strchr            0x000021e9         Code  Gb  strchr.o [5]
+__iar_close_ttio        0x00001579   0x2e  Code  Gb  iarttio.o [6]
+__iar_copy_init3        0x000037c5   0x2c  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x00002871         Code  Gb  DblToI32.o [4]
+__iar_dadd              0x00002a41         Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x00003889   0x28  Code  Gb  data_init.o [5]
+__iar_dlfree            0x00001017  0x510  Code  Gb  dlmalloc.o [3]
+__iar_dlmalloc          0x00000d61  0x2aa  Code  Gb  dlmalloc.o [3]
+__iar_dsub              0x000028c1         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x000028d3         Code  Gb  DblSub.o [4]
+__iar_fadd              0x000033e5         Code  Gb  FltAdd.o [4]
+__iar_fsub              0x000031e5         Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x000031f5         Code  Gb  FltSub.o [4]
+__iar_get_ttio          0x000015a9   0x38  Code  Gb  iarttio.o [6]
+__iar_lookup_ttioh      0x000015e5    0x8  Code  Gb  XShttio.o [3]
+__iar_program_start     0x00003939         Code  Gb  cstartup_M.o [5]
+__iar_sh_stdout         0x00003847   0x20  Code  Gb  iarwstd.o [6]
+__iar_sh_write          0x00003867   0x22  Code  Gb  iarwrite.o [6]
+__iar_ttio_handles      0x20000054    0x8  Data  Lc  XShttio.o [3]
+__iar_ui2d              0x00002895         Code  Gb  I32ToDbl.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x00002381         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x000023a1         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x000023a1         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memmove
+                        0x0000302d         Code  Gb  ABImemmove_unaligned.o [5]
+__iar_unaligned___aeabi_memmove4
+                        0x0000302d         Code  Gb  ABImemmove_unaligned.o [5]
+__iar_unaligned___aeabi_memmove8
+                        0x0000302d         Code  Gb  ABImemmove_unaligned.o [5]
+__iar_unaligned_strcmp  0x00003391         Code  Gb  strcmp_unaligned.o [5]
+__iar_zero_init3        0x00003785   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x000038ef    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000         Data  Gb  vector_table_M.o [5]
+__write                 0x00003819   0x10  Code  Gb  write.o [6]
+_call_main              0x000038e1         Code  Gb  cmain.o [5]
+_exit                   0x000038f9         Code  Gb  cexit.o [5]
+_gm_                    0x2000005c  0x1d8  Data  Lc  dlmalloc.o [3]
+_main                   0x000038eb         Code  Gb  cmain.o [5]
+abort                   0x00001531    0x6  Code  Gb  abort.o [3]
+adjust_heap             0x00002c7b   0x78  Code  Lc  qsort.o [3]
+asArray_value           0x0000364f   0x18  Code  Gb  assocArray.o [1]
+bsearch                 0x000036a5   0x3c  Code  Gb  bsearch.o [3]
+cmp1                    0x00003639    0xc  Code  Gb  assocArray.o [1]
+cmp2                    0x00003645    0xa  Code  Gb  assocArray.o [1]
+db                      0x20000000   0x24  Data  Lc  item.o [1]
+delSList                0x0000316d   0x30  Code  Gb  slist.o [1]
+div                     0x00002a2d    0xe  Code  Gb  div.o [3]
+erase                   0x00003105   0x32  Code  Lc  slist.o [1]
+exit                    0x000038f3    0x4  Code  Gb  exit.o [3]
+hashDataBase            0x00003625   0x14  Code  Gb  item.o [1]
+initPromoList           0x000032bd   0x22  Code  Gb  promo.o [1]
+init_mparams            0x0000005b   0x32  Code  Lc  dlmalloc.o [3]
+init_top                0x0000008d   0x34  Code  Lc  dlmalloc.o [3]
+insertAtBack            0x000030bd   0x24  Code  Lc  slist.o [1]
+insertAtFront           0x000030a5   0x18  Code  Lc  slist.o [1]
+intro_sort              0x00002cf3  0x32a  Code  Lc  qsort.o [3]
+main                    0x000036e1   0xa4  Code  Gb  main.o [1]
+med3                    0x00002c2b   0x50  Code  Lc  qsort.o [3]
+memchr                  0x00002239         Code  Gb  memchr.o [5]
+mparams                 0x20000234   0x18  Data  Lc  dlmalloc.o [3]
+newAsArray              0x00003667   0x32  Code  Gb  assocArray.o [1]
+newCheckout             0x000035db   0x3c  Code  Gb  checkout.o [1]
+newSList                0x00003137   0x1e  Code  Gb  slist.o [1]
+newSListFuncNode        0x000031af   0x12  Code  Gb  slist.o [1]
+newSListObjNode         0x0000319d   0x12  Code  Gb  slist.o [1]
+prepend_alloc           0x000000c1  0x36c  Code  Lc  dlmalloc.o [3]
+printf                  0x000031c1   0x24  Code  Gb  printf.o [3]
+promo1                  0x000032df   0x4a  Code  Lc  promo.o [1]
+promo2                  0x00003329   0x4e  Code  Lc  promo.o [1]
+promos                  0x2000004c    0x8  Data  Lc  promo.o [1]
+putchar                 0x000037f1   0x28  Code  Gb  putchar.o [3]
+qsort                   0x0000301d    0xe  Code  Gb  qsort.o [3]
+reset                   0x0000355d   0x18  Code  Lc  checkout.o [1]
+rot3                    0x00002b6d   0x6a  Code  Lc  qsort.o [3]
+rotate                  0x00002bdd   0x4e  Code  Lc  qsort.o [3]
+scan                    0x00003575   0x2c  Code  Lc  checkout.o [1]
+segment_holding         0x00000041   0x1a  Code  Lc  dlmalloc.o [3]
+strchr                  0x000021e9         Code  Gb  strchr.o [5]
+strlen                  0x00002201         Code  Gb  strlen.o [5]
+swap                    0x00002b15   0x58  Code  Lc  qsort.o [3]
+sys_alloc               0x0000042d  0x386  Code  Lc  dlmalloc.o [3]
+test1                   0x20000034    0xc  Data  Gb  main.o [1]
+test2                   0x20000040    0xc  Data  Gb  main.o [1]
+test3                   0x20000024   0x10  Data  Gb  main.o [1]
+tmalloc_large           0x000007c1  0x390  Code  Lc  dlmalloc.o [3]
+tmalloc_small           0x00000b51  0x210  Code  Lc  dlmalloc.o [3]
+total                   0x000035a1   0x3a  Code  Lc  checkout.o [1]
+traverse                0x000030e1   0x24  Code  Lc  slist.o [1]
+
+
+[1] = C:\Users\george.maiorean\Documents\Projects\IAR\checkout\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  14 592 bytes of readonly  code memory
+     208 bytes of readonly  data memory
+   3 664 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

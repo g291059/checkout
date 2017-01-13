@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>checkout/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>165</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>997</ColumnWidth1><ColumnWidth2>266</ColumnWidth2><ColumnWidth3>66</ColumnWidth3></Build>
+      <TerminalIO/>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-25651-149</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict/></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-23229-27009</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\checkout.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>403</SelStart2><SelEnd2>403</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\promo.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>165</SelStart2><SelEnd2>165</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\item.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>327</SelStart2><SelEnd2>327</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\assocArray.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>392</SelStart2><SelEnd2>392</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\assocArray.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>325</SelStart2><SelEnd2>325</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>244</SelStart2><SelEnd2>244</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\checkout.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>32</YPos2><SelStart2>887</SelStart2><SelEnd2>887</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\promo.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>533</SelStart2><SelEnd2>533</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\item.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>171</SelStart2><SelEnd2>171</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\slist.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>490</SelStart2><SelEnd2>490</SelEnd2></Tab><ActiveTab>9</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\slist.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>6</YPos2><SelStart2>646</SelStart2><SelEnd2>646</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-02A32390><key>iaridepm.enu1</key></Toolbar-02A32390></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>605</Bottom><Right>239</Right><x>-2</x><y>-2</y><xscreen>162</xscreen><yscreen>200</yscreen><sizeHorzCX>143490</sizeHorzCX><sizeHorzCY>236128</sizeHorzCY><sizeVertCX>213463</sizeVertCX><sizeVertCY>716647</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1131</Right><x>-2</x><y>-2</y><xscreen>1133</xscreen><yscreen>200</yscreen><sizeHorzCX>1003543</sizeHorzCX><sizeHorzCY>236128</sizeHorzCY><sizeVertCX>143490</sizeVertCX><sizeVertCY>236128</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
